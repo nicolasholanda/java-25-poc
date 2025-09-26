@@ -1,6 +1,5 @@
-public static void main(String[] args) {
+void main(){
     var greeting = StableValue.<String>of();
-
-    String message = greeting.orElseSet(() -> "Hello from StableValue!");
+    var message = greeting.orElseSet(() -> "Hello from StableValue!");
     System.out.println(message);
 }
